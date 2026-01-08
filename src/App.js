@@ -1,5 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import Greet from './components/greetingWithFunction'
+import Greeting from './components/greetingWithClass'
+import Message from './components/message'
+import Counter from './components/counter';
 
 function App() {
   return (
@@ -18,6 +22,23 @@ function App() {
           Learn React
         </a>
       </header>
+
+      <main>
+        <Greet name="functional component">
+            stateless, dumb and presentational component
+        </Greet>
+        <br/>
+
+        <Greeting name="class component">
+            stateful, smart and container component
+        </Greeting>
+        <br/><br/>
+
+        <Message></Message>
+        <br/><br/>
+
+        <Counter></Counter>
+      </main>
     </div>
   );
 }
