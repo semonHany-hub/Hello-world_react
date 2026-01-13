@@ -4,6 +4,11 @@ import Greet from './components/greetingWithFunction'
 import Greeting from './components/greetingWithClass'
 import Message from './components/message'
 import Counter from './components/counter';
+import ClickWithClass from './components/eventWithClass';
+import ClickWithFunction from './components/eventWithFunction';
+import ParentComponent from './components/parent';
+import Welcome from './components/loggingWelcomeMessage';
+import PersonsList from './components/personsList';
 
 function App() {
   return (
@@ -38,6 +43,26 @@ function App() {
         <br/><br/>
 
         <Counter></Counter>
+        <br/><br/>
+
+        <div>
+          <h2>Click Event Handling</h2>
+          <ClickWithClass></ClickWithClass>
+          <ClickWithFunction></ClickWithFunction>
+        </div>
+        <br/><br/>
+
+        <ParentComponent/>
+        <br/><br/>
+
+        <Welcome>
+          <h2>condition handling</h2>
+        </Welcome>
+        <br/><br/>
+
+        <PersonsList>
+          <h2>developers info</h2>
+        </PersonsList>    
       </main>
     </div>
   );
