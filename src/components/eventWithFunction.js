@@ -2,8 +2,8 @@ import React from 'react'
 
 function ClickWithFunction(){
 
-    function clickHandler(){
-        console.log("class component button clicked...");
+    function clickHandler(e){
+        console.log(`class component button ${e.target} clicked...\ncoordinates of the clicked point-> ${e.clientX}, ${e.clientY}\nwhich mouse button clickes? ${e.button}`);
     }
 
     return(<div>

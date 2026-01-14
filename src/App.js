@@ -9,6 +9,10 @@ import ClickWithFunction from './components/eventWithFunction';
 import ParentComponent from './components/parent';
 import Welcome from './components/loggingWelcomeMessage';
 import PersonsList from './components/personsList';
+import StyleSheet from './components/styleSheet';
+// import './appStyles.css';
+// import Styles from'./appStyles.module.css';
+import {Menu} from './components/menu';
 
 function App() {
   return (
@@ -63,6 +67,16 @@ function App() {
         <PersonsList>
           <h2>developers info</h2>
         </PersonsList>    
+        <br/><br/>
+
+        <div className="section">
+          <h2 className="error">CSS Styling</h2> {/*the style declared in appStyles.css imported in the child component 'StyleSheet' will be applied globally in the parent (app) and affect this line*/}
+          <StyleSheet primary={true} heading={true}></StyleSheet>
+        </div>
+
+        <div className="section">
+          <Menu/>
+        </div>
       </main>
     </div>
   );

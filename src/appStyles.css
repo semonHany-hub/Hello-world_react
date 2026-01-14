@@ -1,0 +1,12 @@
+.error{
+    color:red;
+}
+
+.section{
+    padding:16px;
+    border-radius:8px;
+    background-color:#56bf78;
+    width:fit-content;
+    text-align: center;
+    margin: 6px auto 10px;
+}
