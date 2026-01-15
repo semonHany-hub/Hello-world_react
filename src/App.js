@@ -13,6 +13,8 @@ import StyleSheet from './components/styleSheet';
 // import './appStyles.css';
 // import Styles from'./appStyles.module.css';
 import {Menu} from './components/menu';
+import FormHandling from './components/formHandling';
+import LifeCycleA from './components/lifeCycleA';
 
 function App() {
   return (
@@ -77,6 +79,16 @@ function App() {
         <div className="section">
           <Menu/>
         </div>
+        <br/>
+
+        <h2>Forms Handling</h2>
+        <FormHandling></FormHandling>
+        <br/><br/>
+
+        <h2>Lifecycle Methods</h2>
+        <LifeCycleA/>
+        <br/><br/>
+
       </main>
     </div>
   );
