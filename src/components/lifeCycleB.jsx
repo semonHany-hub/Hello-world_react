@@ -23,7 +23,7 @@ export class LifeCycleB extends Component {
     getSnapshotBeforeUpdate(prevprops, prevstate){
       console.log("LifecycleB getSnapshotBeforeUpdate");
       return null;
-    }
+    } //return null or a value used as a third parameter in the successive method 'componentDidUpdate()'
 
     componentDidUpdate(prevprops, prevstate, snapshot){
       console.log("LifecycleB componentDidUpdate");
@@ -31,7 +31,6 @@ export class LifeCycleB extends Component {
 
     componentDidMount(){
       console.log("LifecycleB componentDidMount");
-      return true
     }
 
   render() {

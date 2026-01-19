@@ -15,8 +15,16 @@ import StyleSheet from './components/styleSheet';
 import {Menu} from './components/menu';
 import FormHandling from './components/formHandling';
 import LifeCycleA from './components/lifeCycleA';
+import Fragment from './components/fragment';
+import RegVSpure from './components/regVSpure';
 
 function App() {
+    const tableStyles={
+      margin:"3px auto",
+      border:"1px solid #000",
+      backgroundColor:"#ccc"
+    };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -89,6 +97,15 @@ function App() {
         <LifeCycleA/>
         <br/><br/>
 
+        <h2>using fragment component</h2>
+        <table style={tableStyles}>
+          <tbody>
+              <Fragment></Fragment>
+          </tbody>
+        </table>
+        <br/><br/>
+
+        <RegVSpure></RegVSpure>
       </main>
     </div>
   );
