@@ -17,6 +17,7 @@ import FormHandling from './components/formHandling';
 import LifeCycleA from './components/lifeCycleA';
 import Fragment from './components/fragment';
 import RegVSpure from './components/regVSpure';
+import RefDemo from './components/refDemo';
 
 function App() {
     const tableStyles={
@@ -106,6 +107,9 @@ function App() {
         <br/><br/>
 
         <RegVSpure></RegVSpure>
+        <br/><br/>
+
+        <RefDemo></RefDemo>
       </main>
     </div>
   );
