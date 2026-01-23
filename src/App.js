@@ -18,6 +18,9 @@ import LifeCycleA from './components/lifeCycleA';
 import Fragment from './components/fragment';
 import RegVSpure from './components/regVSpure';
 import RefDemo from './components/refDemo';
+import PortalParent from './components/portalParent';
+import ErrorBoundry from './components/errorBoundry';
+import IsHero from './components/isHero';
 
 function App() {
     const tableStyles={
@@ -110,6 +113,26 @@ function App() {
         <br/><br/>
 
         <RefDemo></RefDemo>
+        <br/><br/>
+
+        <h2>Portals</h2>
+        <PortalParent></PortalParent>
+        <br/><br/>
+
+        <div>
+          <h2>Using Error Boundry</h2>
+          <ErrorBoundry>
+              <IsHero heroName="superman"></IsHero>
+          </ErrorBoundry>
+
+          <ErrorBoundry>
+            <IsHero heroName="patman"></IsHero>
+          </ErrorBoundry>
+
+          <ErrorBoundry>
+              <IsHero heroName="joker"></IsHero>
+          </ErrorBoundry>
+        </div>
       </main>
     </div>
   );
