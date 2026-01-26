@@ -21,6 +21,11 @@ import RefDemo from './components/refDemo';
 import PortalParent from './components/portalParent';
 import ErrorBoundry from './components/errorBoundry';
 import IsHero from './components/isHero';
+import ClickCounter from './components/clickCounter';
+import HoverCounter from './components/hoverCounter';
+import RenderProps from './components/renderProps';
+import ClickCounterTwo from './components/clickCounterTwo';
+import HoverCounterTwo from './components/hoverCounterTwo';
 
 function App() {
     const tableStyles={
@@ -132,6 +137,20 @@ function App() {
           <ErrorBoundry>
               <IsHero heroName="joker"></IsHero>
           </ErrorBoundry>
+        </div>
+        <br/><br/>
+
+        <div>
+          <h2>using HOC (Higher Order Component)</h2>
+          <ClickCounter name="semon"></ClickCounter>
+          <HoverCounter></HoverCounter>
+        </div>
+        <br/><br/>
+
+        <div>
+          <h2>Render Props</h2>
+          <RenderProps render={(count, incrementCount)=> (<ClickCounterTwo count={count} incrementCount={incrementCount}></ClickCounterTwo>)}></RenderProps>
+          <RenderProps>{(count, incrementCount)=> (<HoverCounterTwo count={count} incrementCount={incrementCount}></HoverCounterTwo>)}</RenderProps>
         </div>
       </main>
     </div>
