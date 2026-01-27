@@ -26,6 +26,8 @@ import HoverCounter from './components/hoverCounter';
 import RenderProps from './components/renderProps';
 import ClickCounterTwo from './components/clickCounterTwo';
 import HoverCounterTwo from './components/hoverCounterTwo';
+import FirstLevelComp from './components/firstLevelComp';
+import {UserProvider} from './components/context';
 
 function App() {
     const tableStyles={
@@ -151,6 +153,14 @@ function App() {
           <h2>Render Props</h2>
           <RenderProps render={(count, incrementCount)=> (<ClickCounterTwo count={count} incrementCount={incrementCount}></ClickCounterTwo>)}></RenderProps>
           <RenderProps>{(count, incrementCount)=> (<HoverCounterTwo count={count} incrementCount={incrementCount}></HoverCounterTwo>)}</RenderProps>
+        </div>
+        <br/><br/>
+
+        <div>
+          <h2>Context</h2>
+          <UserProvider value="semon">
+            <FirstLevelComp></FirstLevelComp>
+          </UserProvider>
         </div>
       </main>
     </div>
